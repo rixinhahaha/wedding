@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R ❤ B</title>
+  <meta name="description" content="Join us to celebrate our wedding on December 19, 2026 at Minjiang at Dempsey, Singapore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">R &amp; B</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle fade-in">We're getting married</p>
+      <h1 class="hero-names fade-in delay-1">
+        <span class="name">Ri Xin</span>
+        <span class="ampersand">&amp;</span>
+        <span class="name">Beryl</span>
+      </h1>
+      <div class="hero-details fade-in delay-2">
+        <p class="hero-date">Saturday, December 19, 2026 · 12:00 PM SGT</p>
+        <div class="hero-divider"></div>
+        <p class="hero-venue"><a href="https://maps.google.com/?q=Minjiang+at+Dempsey+Singapore" target="_blank" rel="noopener noreferrer">Minjiang at Dempsey</a></p>
+        <p class="hero-location">Singapore</p>
+      </div>
+      <div class="countdown fade-in delay-3" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">000</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </div>
+    <a href="#story" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- Section 2: Our Story Timeline -->
+  <section class="story" id="story">
+    <div class="section-header">
+      <h2 class="section-title reveal">Our Story</h2>
+      <p class="section-subtitle reveal">How it all began</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/how-we-met.jpeg" class="lightbox-trigger"><img src="images/large/how-we-met.jpeg" alt="How we met at UCLA"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-date">2018</span>
+            <h3>How We Met</h3>
+            <p>We met in UCLA, right outside the math science building during orientation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/first-date.jpg" class="lightbox-trigger"><img src="images/large/first-date.jpg" alt="First date"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <h3>First Date</h3>
+            <p>Our first date was at Sawtelle!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/adventures-together.jpg" class="lightbox-trigger"><img src="images/large/adventures-together.jpg" alt="Adventures together"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <h3>Adventures Together</h3>
+            <p>Taken at the top of Haleakala in Hawaii.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/game-day.jpeg" class="lightbox-trigger"><img src="images/large/game-day.jpeg" alt="Game Day"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <h3>Game Day</h3>
+            <p>Go Bruins!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 5 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/graduation.jpg" class="lightbox-trigger"><img src="images/large/graduation.jpg" alt="Graduation"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <h3>Graduation</h3>
+            <p>Dr Sui graduates with a PHD in Electrical Engineering <span class="hashtag">#girlboss</span> <span class="hashtag">#womeninstem</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 6 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/proposal.jpeg" class="lightbox-trigger"><img src="images/large/proposal.jpeg" alt="The proposal"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <h3>The Proposal</h3>
+            <p>Will you marry me!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 7 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-photo">
+            <div class="photo-placeholder">
+              <a href="images/large/celebration.jpg" class="lightbox-trigger"><img src="images/large/celebration.jpg" alt="Registration"></a>
+              <span class="placeholder-text">Your Photo</span>
+            </div>
+          </div>
+          <div class="timeline-text">
+            <span class="timeline-date">2025</span>
+            <h3>Registration</h3>
+            <p>We had our registration in San Francisco and held a mini celebration with our friends!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section reveal">
+      <h3 class="video-title">Then & Now</h3>
+      <div class="video-container">
+        <video controls playsinline preload="metadata">
+          <source src="videos/then_and_now_final_v2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: RSVP -->
+  <section class="rsvp" id="rsvp">
+    <div class="section-header">
+      <h2 class="section-title reveal">RSVP</h2>
+      <p class="section-subtitle reveal">We can't wait to celebrate with you</p>
+    </div>
+
+    <div class="rsvp-container reveal">
+      <form id="rsvpForm" class="rsvp-form">
+        <div class="form-group">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label>Will you be attending? <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="attending" value="yes" required>
+              <span class="radio-custom"></span>
+              Joyfully Accepts
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="attending" value="no">
+              <span class="radio-custom"></span>
+              Regretfully Declines
+            </label>
+          </div>
+        </div>
+
+        <!-- Conditional fields shown when attending = yes -->
+        <div class="conditional-fields" id="conditionalFields">
+          <div class="form-group">
+            <label>Will you be bringing a plus one?</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="plusOne" value="yes">
+                <span class="radio-custom"></span>
+                Yes
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="plusOne" value="no" checked>
+                <span class="radio-custom"></span>
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group plus-one-name" id="plusOneName" style="display: none;">
+            <label for="plusOneNameInput">Plus One's Name</label>
+            <input type="text" id="plusOneNameInput" name="plusOneName" placeholder="Their full name">
+          </div>
+
+          <div class="form-group">
+            <label for="dietary">Dietary Restrictions</label>
+            <select id="dietary" name="dietary">
+              <option value="none">No restrictions</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="halal">Halal</option>
+              <option value="gluten-free">Gluten-free</option>
+              <option value="nut-allergy">Nut allergy</option>
+              <option value="other">Other (please specify)</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="dietaryOther" style="display: none;">
+            <label for="dietaryDetails">Please specify dietary requirements</label>
+            <input type="text" id="dietaryDetails" name="dietaryDetails" placeholder="e.g. No shellfish">
+          </div>
+
+          <div class="form-group">
+            <label for="plusOneDietary">Plus One's Dietary Restrictions</label>
+            <select id="plusOneDietary" name="plusOneDietary" style="display: none;">
+              <option value="none">No restrictions</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="halal">Halal</option>
+              <option value="gluten-free">Gluten-free</option>
+              <option value="nut-allergy">Nut allergy</option>
+              <option value="other">Other (please specify)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message for the Couple</label>
+          <textarea id="message" name="message" rows="3" placeholder="Share your well wishes..."></textarea>
+        </div>
+
+        <p class="rsvp-deadline">Please respond by <strong>November 19, 2026</strong></p>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <span class="btn-text">Send RSVP</span>
+          <span class="btn-loading" style="display: none;">Sending...</span>
+        </button>
+
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-names">Ri Xin &amp; Beryl</p>
+      <p class="footer-date">December 19, 2026</p>
+      <p class="footer-hashtag">#R&amp;B</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
