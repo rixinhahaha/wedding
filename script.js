@@ -100,6 +100,24 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// ========== VIDEO AUTOPLAY ON SCROLL ==========
+const video = document.querySelector('.video-container video');
+
+if (video) {
+  video.muted = true;
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  videoObserver.observe(video);
+}
+
 // ========== RSVP FORM ==========
 const form = document.getElementById('rsvpForm');
 const conditionalFields = document.getElementById('conditionalFields');
