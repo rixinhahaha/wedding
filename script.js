@@ -105,15 +105,16 @@ const video = document.querySelector('.video-container video');
 
 if (video) {
   video.muted = true;
+  video.setAttribute('playsinline', '');
   const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        video.play();
+        video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.25 });
 
   videoObserver.observe(video);
 }
