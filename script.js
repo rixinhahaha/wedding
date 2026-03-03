@@ -105,16 +105,26 @@ const video = document.querySelector('.video-container video');
 
 if (video) {
   video.muted = true;
-  video.setAttribute('playsinline', '');
+  video.playsInline = true;
+  video.autoplay = true;
+  video.pause();
+
   const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        video.play().catch(() => {});
+        video.muted = true;
+        video.play().catch(() => {
+          // Retry after user interaction
+          document.addEventListener('touchstart', function retry() {
+            video.play().catch(() => {});
+            document.removeEventListener('touchstart', retry);
+          }, { once: true });
+        });
       } else {
         video.pause();
       }
     });
-  }, { threshold: 0.25 });
+  }, { threshold: 0.2 });
 
   videoObserver.observe(video);
 }
