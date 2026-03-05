@@ -1,0 +1,904 @@
+/* ============================================
+   Singapore Guide - Page-specific Styles
+   Reuses variables from styles.css
+   ============================================ */
+
+/* ============================================
+   Hero Banner (shorter)
+   ============================================ */
+.sg-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--forest) 0%, #1a2e1b 50%, var(--forest) 100%);
+}
+
+.sg-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(143, 174, 139, 0.15) 0%, transparent 70%);
+}
+
+.sg-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 2rem 4rem;
+  max-width: 700px;
+}
+
+.sg-hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+
+.sg-hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.sg-hero-tagline {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1em;
+}
+
+/* ============================================
+   Section Layout
+   ============================================ */
+.sg-section {
+  padding: 6rem 2rem;
+}
+
+.sg-section--cream {
+  background: var(--cream);
+}
+
+.sg-section--cream-dark {
+  background: var(--cream-dark);
+}
+
+.sg-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   Text Content
+   ============================================ */
+.sg-text-block {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.sg-text-block p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.sg-text-block p:last-child {
+  margin-bottom: 0;
+}
+
+.sg-subheading {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sg-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.sg-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.sg-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.sg-tip {
+  background: var(--sage-light);
+  border-left: 3px solid var(--sage);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.sg-tip a {
+  color: var(--sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sg-tip a:hover {
+  color: var(--forest);
+}
+
+/* ============================================
+   Flight Cards
+   ============================================ */
+.sg-flight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.sg-flight-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.sg-flight-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-bottom: 0.75rem;
+}
+
+.sg-flight-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sg-flight-list li {
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.sg-flight-list a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sg-flight-list a:hover {
+  color: var(--sage-dark);
+}
+
+.sg-flight-list a:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ============================================
+   Venue
+   ============================================ */
+.sg-venue {
+  margin-bottom: 2.5rem;
+}
+
+.sg-venue-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sg-venue-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sg-venue-info {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sg-venue-info p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.sg-venue-info .sg-btn {
+  display: block;
+  text-align: center;
+}
+
+.sg-venue-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sg-venue-detail {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.sg-venue-label {
+  font-weight: 500;
+  color: var(--forest);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.sg-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sg-btn--outline {
+  color: var(--forest);
+  border: 1.5px solid var(--forest);
+  background: transparent;
+}
+
+.sg-btn--outline:hover {
+  background: var(--forest);
+  color: var(--white);
+}
+
+.sg-btn--primary {
+  color: var(--white);
+  background: var(--gold);
+  border: none;
+}
+
+.sg-btn--primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(184, 146, 106, 0.4);
+}
+
+/* ============================================
+   Hotel Cards
+   ============================================ */
+.sg-hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sg-hotel-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sg-hotel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sg-hotel-area {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(184, 146, 106, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.sg-hotel-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-bottom: 1rem;
+}
+
+.sg-hotel-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sg-hotel-list li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.sg-hotel-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sg-hotel-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sg-hotel-list a:hover strong {
+  color: var(--sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ============================================
+   Essential Cards
+   ============================================ */
+.sg-essentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.sg-essential-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sg-essential-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sg-essential-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.sg-essential-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-bottom: 0.75rem;
+}
+
+.sg-essential-card p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.sg-essential-card a {
+  color: var(--sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sg-essential-card a:hover {
+  color: var(--forest);
+}
+
+/* ============================================
+   Helpful Apps
+   ============================================ */
+.sg-apps-section {
+  margin-top: 3rem;
+}
+
+.sg-apps-heading {
+  text-align: center;
+  margin-top: 0;
+}
+
+.sg-apps-intro {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.sg-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.sg-app-item {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.sg-app-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.sg-app-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.sg-app-name {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--forest);
+}
+
+.sg-app-desc {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.sg-app-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.sg-app-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  margin-right: 2px;
+}
+
+.sg-app-links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sg-app-links a:hover {
+  color: var(--forest);
+}
+
+/* ============================================
+   Places to Explore
+   ============================================ */
+.sg-places-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.sg-place-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sg-place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sg-place-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-bottom: 0.5rem;
+}
+
+.sg-place-card p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ============================================
+   Regional / Extend Your Trip
+   ============================================ */
+.sg-regional-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sg-regional-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sg-regional-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sg-regional-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.sg-regional-flag {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sg-regional-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sg-regional-flight {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.sg-regional-card p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ============================================
+   CTA Section
+   ============================================ */
+.sg-cta {
+  position: relative;
+  padding: 6rem 2rem;
+  text-align: center;
+  background: var(--forest);
+  overflow: hidden;
+}
+
+.sg-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(143, 174, 139, 0.1) 0%, transparent 70%);
+}
+
+.sg-cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.sg-cta-content h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.sg-cta-content p {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   Active nav link
+   ============================================ */
+.nav-links a.active {
+  color: var(--gold) !important;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+  background: var(--gold);
+}
+
+/* ============================================
+   Mobile Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .sg-hero {
+    min-height: 40vh;
+  }
+
+  .sg-hero-content {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .sg-hero-tagline {
+    font-size: 0.9rem;
+  }
+
+  .sg-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .sg-text-block p {
+    font-size: 0.95rem;
+  }
+
+  .sg-subheading {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .sg-tip {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .sg-flight-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sg-hotel-grid {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+  }
+
+  .sg-essentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .sg-apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sg-places-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sg-regional-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sg-venue-info {
+    padding: 1.5rem;
+  }
+
+  .sg-venue-detail {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .sg-venue-label {
+    min-width: auto;
+  }
+
+  .sg-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sg-hotel-list li {
+    padding: 0.65rem 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  .sg-hotel-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .sg-essential-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .sg-essential-icon {
+    font-size: 1.75rem;
+  }
+
+  .sg-place-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .sg-regional-header h3 {
+    font-size: 1.15rem;
+  }
+
+  .sg-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .sg-cta-content p {
+    font-size: 0.95rem;
+  }
+
+  .sg-cta .sg-btn {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sg-hero {
+    min-height: 35vh;
+  }
+
+  .sg-hero-content {
+    padding: 4.5rem 1rem 2.5rem;
+  }
+
+  .sg-hero-title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .sg-hero-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
+
+  .sg-hero-tagline {
+    font-size: 0.8rem;
+  }
+
+  .sg-section {
+    padding: 3rem 1rem;
+  }
+
+  .sg-text-block p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .sg-list li {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .sg-essentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sg-apps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sg-hotel-card,
+  .sg-essential-card,
+  .sg-place-card,
+  .sg-regional-card {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .sg-essential-card {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .sg-essential-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+  }
+
+  .sg-essential-card p {
+    font-size: 0.85rem;
+  }
+
+  .sg-place-card p,
+  .sg-regional-card p {
+    font-size: 0.85rem;
+  }
+
+  .sg-regional-flag {
+    font-size: 1.75rem;
+  }
+
+  .sg-venue-photo {
+    border-radius: 12px;
+  }
+
+  .sg-venue-info {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .sg-cta {
+    padding: 3.5rem 1rem;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .sg-hotel-card:hover,
+  .sg-essential-card:hover,
+  .sg-place-card:hover,
+  .sg-regional-card:hover,
+  .sg-btn--primary:hover {
+    transform: none;
+  }
+}
