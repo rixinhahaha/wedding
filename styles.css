@@ -92,6 +92,9 @@ a {
   color: var(--white);
   transition: color 0.4s ease;
   flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
 }
 
 .nav.scrolled .nav-logo {
@@ -99,9 +102,9 @@ a {
 }
 
 .nav-heart {
-  width: 0.7em;
-  height: 0.7em;
-  vertical-align: -0.05em;
+  width: 0.65em;
+  height: 0.65em;
+  flex-shrink: 0;
   color: inherit;
 }
 
@@ -170,14 +173,11 @@ a {
   margin-left: 1.5rem;
   flex: 1;
   justify-content: flex-end;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
-  overflow: hidden;
 }
 
 .lang-toggle button {
   background: none;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 0.3rem 0.6rem;
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -188,8 +188,17 @@ a {
   transition: all 0.3s ease;
 }
 
+.lang-toggle button:first-child {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+
+.lang-toggle button:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
 .lang-toggle button.active {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   font-weight: 500;
 }
 
@@ -197,12 +206,9 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.nav.scrolled .lang-toggle {
-  border-color: rgba(44, 62, 45, 0.2);
-}
-
 .nav.scrolled .lang-toggle button {
   color: var(--forest);
+  border-color: rgba(44, 62, 45, 0.3);
 }
 
 .nav.scrolled .lang-toggle button.active {
