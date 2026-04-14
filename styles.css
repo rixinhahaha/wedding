@@ -18,6 +18,8 @@
   --white: #ffffff;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Jost', 'Helvetica Neue', sans-serif;
+  --font-serif-zh: 'Noto Serif SC', 'Songti SC', serif;
+  --font-sans-zh: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 /* Reset & Base */
@@ -151,6 +153,50 @@ a {
 
 .nav.scrolled .nav-toggle span {
   background: var(--forest);
+}
+
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  gap: 0;
+  margin-left: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-toggle button.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.lang-toggle button:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav.scrolled .lang-toggle {
+  border-color: rgba(44, 62, 45, 0.2);
+}
+
+.nav.scrolled .lang-toggle button {
+  color: var(--forest);
+}
+
+.nav.scrolled .lang-toggle button.active {
+  background: rgba(44, 62, 45, 0.1);
 }
 
 /* ============================================
@@ -1071,6 +1117,11 @@ a {
     display: flex;
   }
 
+  .lang-toggle {
+    margin-left: auto;
+    margin-right: 0.75rem;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1211,6 +1262,14 @@ a {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* ============================================
+   Chinese Language Fonts
+   ============================================ */
+html[lang="zh-CN"] {
+  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+  --font-sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 /* ============================================

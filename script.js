@@ -198,7 +198,7 @@ form.addEventListener('submit', async (e) => {
 
   // Check if Google Script URL is configured
   if (!GOOGLE_SCRIPT_URL) {
-    formMessage.textContent = 'RSVP form is not yet connected. Please set up Google Sheets integration (see SETUP.md).';
+    formMessage.textContent = t('rsvp.notconnected');
     formMessage.className = 'form-message error';
     submitBtn.disabled = false;
     btnText.style.display = 'inline';
@@ -221,8 +221,8 @@ form.addEventListener('submit', async (e) => {
           <div class="heart-container">
             <div class="heart"></div>
           </div>
-          <h3 class="success-title">Thank You!</h3>
-          <p class="success-text">Your RSVP has been received.<br>We can't wait to celebrate with you!</p>
+          <h3 class="success-title">${t('rsvp.success.yes.title')}</h3>
+          <p class="success-text">${t('rsvp.success.yes.text')}</p>
         </div>
       `;
     } else {
@@ -231,13 +231,13 @@ form.addEventListener('submit', async (e) => {
           <div class="heart-container">
             <div class="heart heart-sad"></div>
           </div>
-          <h3 class="success-title">We'll Miss You!</h3>
-          <p class="success-text">We're sad you can't make it, but we appreciate you letting us know.<br>You'll be in our hearts on the big day!</p>
+          <h3 class="success-title">${t('rsvp.success.no.title')}</h3>
+          <p class="success-text">${t('rsvp.success.no.text')}</p>
         </div>
       `;
     }
   } catch (error) {
-    formMessage.textContent = 'Something went wrong. Please try again or contact us directly.';
+    formMessage.textContent = t('rsvp.error');
     formMessage.className = 'form-message error';
     formMessage.style.display = 'block';
     submitBtn.disabled = false;

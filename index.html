@@ -21,7 +21,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -59,11 +59,15 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="singapore.html">Singapore</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#story" data-i18n="nav.story">Our Story</a></li>
+        <li><a href="singapore.html" data-i18n="nav.singapore">Singapore</a></li>
+        <li><a href="#rsvp" data-i18n="nav.rsvp">RSVP</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="zh">中文</button>
+      </div>
     </div>
   </nav>
 
@@ -72,39 +76,39 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-subtitle fade-in">We're getting married</p>
+      <p class="hero-subtitle fade-in" data-i18n="hero.subtitle">We're getting married</p>
       <h1 class="hero-names fade-in delay-1">
-        <span class="name">Ri Xin</span>
+        <span class="name" data-i18n="hero.name1">Ri Xin</span>
         <span class="ampersand">&amp;</span>
-        <span class="name">Beryl</span>
+        <span class="name" data-i18n="hero.name2">Beryl</span>
       </h1>
       <div class="hero-details fade-in delay-2">
-        <p class="hero-date">Saturday, December 19, 2026 · 12:00 PM SGT</p>
+        <p class="hero-date" data-i18n="hero.date">Saturday, December 19, 2026 · 12:00 PM SGT</p>
         <div class="hero-divider"></div>
         <p class="hero-venue"><a href="https://maps.google.com/?q=Minjiang+at+Dempsey+Singapore" target="_blank" rel="noopener noreferrer">Minjiang at Dempsey</a></p>
-        <p class="hero-location">Singapore</p>
+        <p class="hero-location" data-i18n="hero.location">Singapore</p>
       </div>
       <div class="countdown fade-in delay-3" id="countdown">
         <div class="countdown-item">
           <span class="countdown-number" id="days">000</span>
-          <span class="countdown-label">Days</span>
+          <span class="countdown-label" data-i18n="countdown.days">Days</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-number" id="hours">00</span>
-          <span class="countdown-label">Hours</span>
+          <span class="countdown-label" data-i18n="countdown.hours">Hours</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-number" id="minutes">00</span>
-          <span class="countdown-label">Minutes</span>
+          <span class="countdown-label" data-i18n="countdown.minutes">Minutes</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-number" id="seconds">00</span>
-          <span class="countdown-label">Seconds</span>
+          <span class="countdown-label" data-i18n="countdown.seconds">Seconds</span>
         </div>
       </div>
     </div>
     <a href="#story" class="scroll-indicator" aria-label="Scroll down">
-      <span class="scroll-text">Scroll</span>
+      <span class="scroll-text" data-i18n="scroll.text">Scroll</span>
       <span class="scroll-arrow"></span>
     </a>
   </section>
@@ -112,8 +116,8 @@
   <!-- Section 2: Our Story Timeline -->
   <section class="story" id="story">
     <div class="section-header">
-      <h2 class="section-title reveal">Our Story</h2>
-      <p class="section-subtitle reveal">How it all began</p>
+      <h2 class="section-title reveal" data-i18n="story.title">Our Story</h2>
+      <p class="section-subtitle reveal" data-i18n="story.subtitle">How it all began</p>
     </div>
 
     <div class="timeline">
@@ -129,8 +133,8 @@
           </div>
           <div class="timeline-text">
             <span class="timeline-date">2018</span>
-            <h3>How We Met</h3>
-            <p>We met in UCLA, right outside the math science building during orientation.</p>
+            <h3 data-i18n="story.met.title">How We Met</h3>
+            <p data-i18n="story.met.text">We met in UCLA, right outside the math science building during orientation.</p>
           </div>
         </div>
       </div>
@@ -146,8 +150,8 @@
             </div>
           </div>
           <div class="timeline-text">
-            <h3>First Date</h3>
-            <p>Our first date was at Sawtelle!</p>
+            <h3 data-i18n="story.date.title">First Date</h3>
+            <p data-i18n="story.date.text">Our first date was at Sawtelle!</p>
           </div>
         </div>
       </div>
@@ -163,8 +167,8 @@
             </div>
           </div>
           <div class="timeline-text">
-            <h3>Adventures Together</h3>
-            <p>Taken at the top of Haleakala in Hawaii.</p>
+            <h3 data-i18n="story.adventures.title">Adventures Together</h3>
+            <p data-i18n="story.adventures.text">Taken at the top of Haleakala in Hawaii.</p>
           </div>
         </div>
       </div>
@@ -180,8 +184,8 @@
             </div>
           </div>
           <div class="timeline-text">
-            <h3>Game Day</h3>
-            <p>Go Bruins!</p>
+            <h3 data-i18n="story.game.title">Game Day</h3>
+            <p data-i18n="story.game.text">Go Bruins!</p>
           </div>
         </div>
       </div>
@@ -197,8 +201,8 @@
             </div>
           </div>
           <div class="timeline-text">
-            <h3>Graduation</h3>
-            <p>Dr Sui graduates with a PHD in Electrical Engineering <span class="hashtag">#girlboss</span> <span class="hashtag">#womeninstem</span></p>
+            <h3 data-i18n="story.graduation.title">Graduation</h3>
+            <p data-i18n="story.graduation.text">Dr Sui graduates with a PHD in Electrical Engineering <span class="hashtag">#girlboss</span> <span class="hashtag">#womeninstem</span></p>
           </div>
         </div>
       </div>
@@ -214,8 +218,8 @@
             </div>
           </div>
           <div class="timeline-text">
-            <h3>The Proposal</h3>
-            <p>Will you marry me!</p>
+            <h3 data-i18n="story.proposal.title">The Proposal</h3>
+            <p data-i18n="story.proposal.text">Will you marry me!</p>
           </div>
         </div>
       </div>
@@ -232,8 +236,8 @@
           </div>
           <div class="timeline-text">
             <span class="timeline-date">2025</span>
-            <h3>Registration</h3>
-            <p>We had our registration in San Francisco and held a mini celebration with our friends!</p>
+            <h3 data-i18n="story.registration.title">Registration</h3>
+            <p data-i18n="story.registration.text">We had our registration in San Francisco and held a mini celebration with our friends!</p>
           </div>
         </div>
       </div>
@@ -241,7 +245,7 @@
 
     <!-- Video Section -->
     <div class="video-section reveal">
-      <h3 class="video-title">Then & Now</h3>
+      <h3 class="video-title" data-i18n="video.title">Then & Now</h3>
       <div class="video-container">
         <video controls playsinline muted autoplay preload="auto">
           <source src="videos/then_and_now_final_v2_web.mp4" type="video/mp4">
@@ -254,34 +258,34 @@
   <!-- Section 3: RSVP -->
   <section class="rsvp" id="rsvp">
     <div class="section-header">
-      <h2 class="section-title reveal">RSVP</h2>
-      <p class="section-subtitle reveal">We can't wait to celebrate with you</p>
+      <h2 class="section-title reveal" data-i18n="rsvp.title">RSVP</h2>
+      <p class="section-subtitle reveal" data-i18n="rsvp.subtitle">We can't wait to celebrate with you</p>
     </div>
 
     <div class="rsvp-container reveal">
       <form id="rsvpForm" class="rsvp-form">
         <div class="form-group">
-          <label for="name">Full Name <span class="required">*</span></label>
-          <input type="text" id="name" name="name" required placeholder="Your full name">
+          <label for="name"><span data-i18n="rsvp.name">Full Name</span> <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" data-i18n-placeholder="rsvp.name.placeholder">
         </div>
 
         <div class="form-group">
-          <label for="email">Email <span class="required">*</span></label>
-          <input type="email" id="email" name="email" required placeholder="your@email.com">
+          <label for="email"><span data-i18n="rsvp.email">Email</span> <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" data-i18n-placeholder="rsvp.email.placeholder">
         </div>
 
         <div class="form-group">
-          <label>Will you be attending? <span class="required">*</span></label>
+          <label><span data-i18n="rsvp.attending">Will you be attending?</span> <span class="required">*</span></label>
           <div class="radio-group">
             <label class="radio-label">
               <input type="radio" name="attending" value="yes" required>
               <span class="radio-custom"></span>
-              Joyfully Accepts
+              <span data-i18n="rsvp.accepts">Joyfully Accepts</span>
             </label>
             <label class="radio-label">
               <input type="radio" name="attending" value="no">
               <span class="radio-custom"></span>
-              Regretfully Declines
+              <span data-i18n="rsvp.declines">Regretfully Declines</span>
             </label>
           </div>
         </div>
@@ -289,68 +293,68 @@
         <!-- Conditional fields shown when attending = yes -->
         <div class="conditional-fields" id="conditionalFields">
           <div class="form-group">
-            <label>Will you be bringing a plus one?</label>
+            <label data-i18n="rsvp.plusone">Will you be bringing a plus one?</label>
             <div class="radio-group">
               <label class="radio-label">
                 <input type="radio" name="plusOne" value="yes">
                 <span class="radio-custom"></span>
-                Yes
+                <span data-i18n="rsvp.yes">Yes</span>
               </label>
               <label class="radio-label">
                 <input type="radio" name="plusOne" value="no" checked>
                 <span class="radio-custom"></span>
-                No
+                <span data-i18n="rsvp.no">No</span>
               </label>
             </div>
           </div>
 
           <div class="form-group plus-one-name" id="plusOneName" style="display: none;">
-            <label for="plusOneNameInput">Plus One's Name</label>
-            <input type="text" id="plusOneNameInput" name="plusOneName" placeholder="Their full name">
+            <label for="plusOneNameInput" data-i18n="rsvp.plusone.name">Plus One's Name</label>
+            <input type="text" id="plusOneNameInput" name="plusOneName" placeholder="Their full name" data-i18n-placeholder="rsvp.plusone.name.placeholder">
           </div>
 
           <div class="form-group">
-            <label for="dietary">Dietary Restrictions</label>
+            <label for="dietary" data-i18n="rsvp.dietary">Dietary Restrictions</label>
             <select id="dietary" name="dietary">
-              <option value="none">No restrictions</option>
-              <option value="vegetarian">Vegetarian</option>
-              <option value="vegan">Vegan</option>
-              <option value="halal">Halal</option>
-              <option value="gluten-free">Gluten-free</option>
-              <option value="nut-allergy">Nut allergy</option>
-              <option value="other">Other (please specify)</option>
+              <option value="none" data-i18n="rsvp.dietary.none">No restrictions</option>
+              <option value="vegetarian" data-i18n="rsvp.dietary.vegetarian">Vegetarian</option>
+              <option value="vegan" data-i18n="rsvp.dietary.vegan">Vegan</option>
+              <option value="halal" data-i18n="rsvp.dietary.halal">Halal</option>
+              <option value="gluten-free" data-i18n="rsvp.dietary.gluten">Gluten-free</option>
+              <option value="nut-allergy" data-i18n="rsvp.dietary.nut">Nut allergy</option>
+              <option value="other" data-i18n="rsvp.dietary.other">Other (please specify)</option>
             </select>
           </div>
 
           <div class="form-group" id="dietaryOther" style="display: none;">
-            <label for="dietaryDetails">Please specify dietary requirements</label>
-            <input type="text" id="dietaryDetails" name="dietaryDetails" placeholder="e.g. No shellfish">
+            <label for="dietaryDetails" data-i18n="rsvp.dietary.specify">Please specify dietary requirements</label>
+            <input type="text" id="dietaryDetails" name="dietaryDetails" placeholder="e.g. No shellfish" data-i18n-placeholder="rsvp.dietary.specify.placeholder">
           </div>
 
           <div class="form-group">
-            <label for="plusOneDietary">Plus One's Dietary Restrictions</label>
+            <label for="plusOneDietary" data-i18n="rsvp.plusone.dietary">Plus One's Dietary Restrictions</label>
             <select id="plusOneDietary" name="plusOneDietary" style="display: none;">
-              <option value="none">No restrictions</option>
-              <option value="vegetarian">Vegetarian</option>
-              <option value="vegan">Vegan</option>
-              <option value="halal">Halal</option>
-              <option value="gluten-free">Gluten-free</option>
-              <option value="nut-allergy">Nut allergy</option>
-              <option value="other">Other (please specify)</option>
+              <option value="none" data-i18n="rsvp.dietary.none">No restrictions</option>
+              <option value="vegetarian" data-i18n="rsvp.dietary.vegetarian">Vegetarian</option>
+              <option value="vegan" data-i18n="rsvp.dietary.vegan">Vegan</option>
+              <option value="halal" data-i18n="rsvp.dietary.halal">Halal</option>
+              <option value="gluten-free" data-i18n="rsvp.dietary.gluten">Gluten-free</option>
+              <option value="nut-allergy" data-i18n="rsvp.dietary.nut">Nut allergy</option>
+              <option value="other" data-i18n="rsvp.dietary.other">Other (please specify)</option>
             </select>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="message">Message for the Couple</label>
-          <textarea id="message" name="message" rows="3" placeholder="Share your well wishes..."></textarea>
+          <label for="message" data-i18n="rsvp.message">Message for the Couple</label>
+          <textarea id="message" name="message" rows="3" placeholder="Share your well wishes..." data-i18n-placeholder="rsvp.message.placeholder"></textarea>
         </div>
 
-        <p class="rsvp-deadline">Please respond by <strong>August 19, 2026</strong></p>
+        <p class="rsvp-deadline" data-i18n="rsvp.deadline">Please respond by <strong>August 19, 2026</strong></p>
 
         <button type="submit" class="btn-submit" id="submitBtn">
-          <span class="btn-text">Send RSVP</span>
-          <span class="btn-loading" style="display: none;">Sending...</span>
+          <span class="btn-text" data-i18n="rsvp.submit">Send RSVP</span>
+          <span class="btn-loading" style="display: none;" data-i18n="rsvp.sending">Sending...</span>
         </button>
 
         <div class="form-message" id="formMessage"></div>
@@ -361,9 +365,9 @@
   <!-- Travel Guide CTA -->
   <section class="travel-cta">
     <div class="travel-cta-content">
-      <h2 class="travel-cta-title">Travelling from Abroad?</h2>
-      <p class="travel-cta-text">Check out our Singapore guide for flights, hotels, visa info, and things to explore.</p>
-      <a href="singapore.html" class="travel-cta-btn">Singapore Travel Guide</a>
+      <h2 class="travel-cta-title" data-i18n="travel.title">Travelling from Abroad?</h2>
+      <p class="travel-cta-text" data-i18n="travel.text">Check out our Singapore guide for flights, hotels, visa info, and things to explore.</p>
+      <a href="singapore.html" class="travel-cta-btn" data-i18n="travel.btn">Singapore Travel Guide</a>
     </div>
   </section>
 
@@ -372,8 +376,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <p class="footer-names">Ri Xin &amp; Beryl</p>
-      <p class="footer-date">December 19, 2026</p>
+      <p class="footer-names" data-i18n="footer.names">Ri Xin &amp; Beryl</p>
+      <p class="footer-date" data-i18n="footer.date">December 19, 2026</p>
       <p class="footer-hashtag">#R❤B</p>
     </div>
   </footer>
@@ -384,6 +388,7 @@
     <img class="lightbox-img" id="lightboxImg" src="" alt="">
   </div>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
