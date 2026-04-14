@@ -99,11 +99,9 @@ a {
 }
 
 .nav-heart {
-  width: 0.75em;
-  height: 0.75em;
-  vertical-align: baseline;
-  position: relative;
-  top: -0.05em;
+  width: 0.7em;
+  height: 0.7em;
+  vertical-align: -0.05em;
   color: inherit;
 }
 
@@ -1285,9 +1283,10 @@ html[lang="zh-CN"] {
 }
 
 .heart-icon {
-  width: clamp(1.5rem, 4vw, 2.5rem);
-  height: clamp(1.5rem, 4vw, 2.5rem);
+  width: 1em;
+  height: 1em;
   color: var(--gold-light);
+  display: inline-block;
   vertical-align: middle;
 }
 
