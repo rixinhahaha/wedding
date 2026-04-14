@@ -91,6 +91,7 @@ a {
   letter-spacing: 0.1em;
   color: var(--white);
   transition: color 0.4s ease;
+  flex: 1;
 }
 
 .nav.scrolled .nav-logo {
@@ -169,6 +170,8 @@ a {
   display: flex;
   gap: 0;
   margin-left: 1.5rem;
+  flex: 1;
+  justify-content: flex-end;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
   overflow: hidden;
