@@ -1272,6 +1272,13 @@ html[lang="zh-CN"] {
   --font-sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
+.heart-icon {
+  width: clamp(1.5rem, 4vw, 2.5rem);
+  height: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--gold-light);
+  vertical-align: middle;
+}
+
 /* ============================================
    Lightbox
    ============================================ */
