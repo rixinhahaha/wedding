@@ -472,6 +472,67 @@ a {
   color: var(--text-light);
 }
 
+.programme {
+  padding: 6rem 2rem;
+  background: var(--cream-dark);
+  scroll-margin-top: 4rem;
+}
+
+.programme-timeline {
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+  border-left: 1px solid var(--gold);
+}
+
+.programme-item {
+  position: relative;
+  padding: 0 0 2.5rem 2rem;
+}
+
+.programme-item:last-child {
+  padding-bottom: 0;
+}
+
+.programme-item::before {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.programme-item time {
+  color: var(--forest);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.programme-item h3,
+.dress-code h3 {
+  margin: 0.5rem 0;
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--forest);
+}
+
+.programme-item p,
+.dress-code p {
+  color: var(--text-light);
+}
+
+.dress-code {
+  max-width: 720px;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gold-light);
+}
+
 /* ============================================
    Our Story / Timeline
    ============================================ */

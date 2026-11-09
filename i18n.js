@@ -7,6 +7,7 @@ const translations = {
   en: {
     // Navigation
     'nav.home': 'Home',
+    'nav.programme': 'Programme',
     'nav.story': 'Our Story',
     'nav.singapore': 'Singapore',
     'nav.rsvp': 'RSVP',
@@ -23,6 +24,18 @@ const translations = {
     'countdown.minutes': 'Minutes',
     'countdown.seconds': 'Seconds',
     'scroll.text': 'Scroll',
+
+    // Programme
+    'programme.title': 'On the Day',
+    'programme.subtitle': '19 December 2026 · All times in Singapore time (SGT)',
+    'programme.family.time': '9:30 AM',
+    'programme.family.title': 'Family & Wedding Party Arrival',
+    'programme.family.text': 'Family, bridesmaids and groomsmen, please arrive at 9:30 AM.',
+    'programme.friends.time': '11:30 AM',
+    'programme.friends.title': 'Friends Arrival',
+    'programme.friends.text': "Friends, please join us from 11:30 AM. We can't wait to celebrate with you!",
+    'dress.title': 'Dress Code',
+    'dress.text': 'Please wear soft, muted tones and avoid overly bright colours.',
 
     // Our Story
     'story.title': 'Our Story',
@@ -222,6 +235,7 @@ const translations = {
   zh: {
     // Navigation
     'nav.home': '首页',
+    'nav.programme': '婚礼流程',
     'nav.story': '我们的故事',
     'nav.singapore': '新加坡',
     'nav.rsvp': '回复邀请',
@@ -238,6 +252,18 @@ const translations = {
     'countdown.minutes': '分',
     'countdown.seconds': '秒',
     'scroll.text': '向下滑动',
+
+    // Programme
+    'programme.title': '婚礼当天',
+    'programme.subtitle': '2026年12月19日 · 以下均为新加坡时间 (SGT)',
+    'programme.family.time': '上午9:30',
+    'programme.family.title': '家人、伴娘及伴郎到场',
+    'programme.family.text': '请家人、伴娘及伴郎于上午9:30到场。',
+    'programme.friends.time': '上午11:30',
+    'programme.friends.title': '朋友到场',
+    'programme.friends.text': '请朋友们于上午11:30起到场，期待与大家一起庆祝！',
+    'dress.title': '着装建议',
+    'dress.text': '请穿着柔和、低饱和度色调的服装，避免过于鲜艳的颜色。',
 
     // Our Story
     'story.title': '我们的故事',
